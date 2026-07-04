@@ -6,7 +6,7 @@ This document outlines the architectural limitations, roadmap, and planned impro
 
 ### 1. Solana Anchor Deployment
 - **Status**: Simulation mode.
-- **Goal**: Deploy the Solana Anchor HTLC program on devnet and activate full on-chain swap validation in the `@wafflefinance/sdk` client.
+- **Goal**: Deploy the Solana Anchor HTLC program on devnet and activate full on-chain swap validation in the `@astro-bridge/sdk` client.
 
 ### 2. Multi-Sig Resolver Governance
 - **Status**: Slashing is currently single-owner gated.

@@ -55,18 +55,18 @@ cargo build --target wasm32-unknown-unknown --release
 ### Coordinator REST Service (`/coordinator`)
 Start the Order Book tracker with local SQLite database:
 ```bash
-pnpm --filter @wafflefinance/coordinator dev
+pnpm --filter @astro-bridge/coordinator dev
 ```
 
 ### Relayer Engine (`/relayer`)
 Start the event-polling watchdogs:
 ```bash
-pnpm --filter @wafflefinance/relayer dev
+pnpm --filter @astro-bridge/relayer dev
 ```
 
 ### React Frontend (`/frontend`)
 Launch the client swap interface locally:
 ```bash
-pnpm --filter @wafflefinance/frontend dev
+pnpm --filter @astro-bridge/frontend dev
 ```
 The client dApp will open at [http://localhost:5173/](http://localhost:5173/).

@@ -7,7 +7,7 @@ This document describes the deployment checklists, environment configurations, a
 ### Sepolia Testnet Deployment
 Configure `ETHEREUM_RPC_URL` and `RELAYER_PRIVATE_KEY` in `.env`, then execute:
 ```bash
-pnpm --filter @wafflefinance/contracts exec hardhat run scripts/deploy.ts --network sepolia
+pnpm --filter @astro-bridge/contracts exec hardhat run scripts/deploy.ts --network sepolia
 ```
 
 ### Soroban Testnet Deployment
@@ -33,7 +33,7 @@ Anyone can operate a resolver by staking into the `ResolverRegistry` and running
 ### 1. Register Staking
 Register resolver staking via the CLI runner or docker container:
 ```bash
-docker run ghcr.io/wafflefinance/resolver:latest register \
+docker run ghcr.io/astro-bridge/resolver:latest register \
   --private-key <EVM_KEY> \
   --stake-amount 1000000000000000000 \
   --network sepolia
@@ -42,7 +42,7 @@ docker run ghcr.io/wafflefinance/resolver:latest register \
 ### 2. Run Resolver Service
 Poller starts and waits for matching cross-chain orders:
 ```bash
-docker run ghcr.io/wafflefinance/resolver:latest run \
+docker run ghcr.io/astro-bridge/resolver:latest run \
   --private-key <EVM_KEY> \
   --stellar-secret <STELLAR_KEY> \
   --rpc-url-eth <ETH_RPC> \
