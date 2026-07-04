@@ -1,0 +1,7 @@
+packages:
+  - 'contracts'
+  - 'packages/*'
+  - 'coordinator'
+  - 'relayer'
+  - 'resolver'
+  - 'frontend'

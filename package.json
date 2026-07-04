@@ -1,0 +1,11 @@
+{
+  "name": "astro-bridge-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:config": "pnpm --filter @astro-bridge/config build",
+    "build:sdk": "pnpm --filter @astro-bridge/sdk build",
+    "build": "pnpm build:config && pnpm build:sdk && pnpm --filter @astro-bridge/coordinator build && pnpm --filter @astro-bridge/relayer build && pnpm --filter @astro-bridge/resolver build && pnpm --filter @astro-bridge/frontend build",
+    "test:contracts": "pnpm --filter @astro-bridge/contracts test"
+  }
+}
