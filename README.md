@@ -5,7 +5,7 @@
 > Non-custodial cross-chain atomic swap — Ethereum · Stellar · Solana  
 > **No validator set. No attester. No admin escape hatch.**
 
-[![CI](https://github.com/astro-bridge/astro-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/astro-bridge/astro-bridge/actions/workflows/ci.yml)
+[![CI](https://github.com/elenajoyce/astro-bridge-core/actions/workflows/ci.yml/badge.svg)](https://github.com/elenajoyce/astro-bridge-core/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
